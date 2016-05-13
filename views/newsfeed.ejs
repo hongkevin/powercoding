@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <style>
+
+    </style>
+</head>
+<body>
+<ul>
+    <li>
+        <a href="./newsfeed">뉴스피드</a>
+    </li>
+    <li>
+        <a href="./mdlist">모델리스트</a>
+    </li>
+    <li>
+        <a href="./pglist">작가리스트</a>
+    </li>
+    <li>
+        <a href="./chat">채팅</a>
+    </li>
+    <li>
+        <a href="./mypage">내정보</a>
+    </li>
+</ul>
+
+<h1>뉴스피드</h1>
+
+<% for (var i = 0; i < 2; i++) { %>
+    <p>
+        <%=books[i].id%>
+        <div class='uploader'>
+            <a href='http://www.daum.net'><%=books[i].username%></a>
+        </div>
+        <div class='photo'>
+            <a href='http://www.naver.com'><img src='<%=books[i].img_url%>' /></a>
+        </div>
+    </p>
+<% } %>
+</body>
+</html>

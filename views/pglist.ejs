@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <style>
+
+    </style>
+</head>
+<body>
+<ul>
+    <li>
+        <a href="./newsfeed">뉴스피드</a>
+    </li>
+    <li>
+        <a href="./mdlist">모델리스트</a>
+    </li>
+    <li>
+        <a href="./pglist">작가리스트</a>
+    </li>
+    <li>
+        <a href="./chat">채팅</a>
+    </li>
+    <li>
+        <a href="./mypage">내정보</a>
+    </li>
+</ul>
+
+<h1>작가리스트</h1>
+
+<% for (var i = 0; i < 2; i++) { %>
+    <p>
+        번호: <%=users[i].id%>
+        이름: <%=users[i].username%>
+        주소: <%=users[i].address%>
+        금액: <%=users[i].price%>
+        타입: <%=users[i].user_type%>
+    </p>
+<% } %>
+</body>
+</html>
